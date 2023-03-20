@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css"
+    />
+    <title>OpenLayers</title>
+  </head>
+  <body>
+    <div>
+      <div class="switch">
+        <input type="radio" name="switcher" id="OSM" checked="checked" />
+        <label for="OSM">OSM</label>
+        <input type="radio" name="switcher" id="Stad" />
+        <label for="Stad">Stadia</label>
+      </div>
+      <div id="popup">hey</div>
+      <button id="Mes">Measure</button>
+    </div>
+    <div id="drawtype">
+      <select name="drawoption" id="selector">
+        <option value="Point">Point</option>
+        <option value="LineString">Line</option>
+        <option value="Polygon">Polygon</option>
+      </select>
+    </div>
+    <div id="map" class="map"></div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

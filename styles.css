@@ -1,0 +1,14 @@
+html,
+body {
+  height: 600px;
+  width: 100%;
+}
+#map {
+  height: 900px;
+  width: 100%;
+}
+#popup {
+  /* width: 20px;
+  height: 10px; */
+  background-color: aqua;
+}
